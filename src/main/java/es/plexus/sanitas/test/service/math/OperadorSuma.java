@@ -17,4 +17,9 @@ public class OperadorSuma implements Operador {
     }
     return result;
   }
+  
+  @Override
+  public boolean acepta(TipoOperador tipoOperador) {
+    return tipoOperador == TipoOperador.SUMA;
+  }
 }

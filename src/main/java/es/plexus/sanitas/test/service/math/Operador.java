@@ -11,4 +11,6 @@ public interface Operador {
    * @return el resultado
    */
   public BigDecimal operar(Operando... operadores);
+  
+  public boolean acepta(TipoOperador tipoOperador);
 }

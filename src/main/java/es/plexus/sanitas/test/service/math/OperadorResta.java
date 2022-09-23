@@ -18,4 +18,10 @@ public class OperadorResta implements Operador {
     }
     return result;
   }
+  
+  @Override
+  public boolean acepta(TipoOperador tipoOperador) {
+    return tipoOperador == TipoOperador.RESTA;
+  }
+  
 }
