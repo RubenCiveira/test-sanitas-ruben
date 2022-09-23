@@ -27,7 +27,7 @@ class SanitasTestApplicationTests {
   public void sumar() throws Exception {
     MvcResult result = mockMvc
         .perform(MockMvcRequestBuilders
-            .get("/api/math/suma?first=2&second=3")
+            .get("/api/math/suma?primero=2&segundo=3")
             .accept(MediaType.APPLICATION_JSON))
         .andExpect(MockMvcResultMatchers.status().isOk()).andReturn();
 
@@ -40,7 +40,7 @@ class SanitasTestApplicationTests {
   public void restar() throws Exception {
     MvcResult result = mockMvc
         .perform(MockMvcRequestBuilders
-            .get("/api/math/resta?first=12&second=3")
+            .get("/api/math/resta?primero=12&segundo=3")
             .accept(MediaType.APPLICATION_JSON))
         .andExpect(MockMvcResultMatchers.status().isOk()).andReturn();
 

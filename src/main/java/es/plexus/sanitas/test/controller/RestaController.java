@@ -21,8 +21,8 @@ public class RestaController {
   }
 
   @GetMapping
-  public ResponseEntity<BigDecimal> resta(@RequestParam() Long first, @RequestParam() Long second) {
+  public ResponseEntity<BigDecimal> resta(@RequestParam() Long primero, @RequestParam() Long segundo) {
     return ResponseEntity
-        .ok(service.operar(new OperandoNumerico(first), new OperandoNumerico(second)));
+        .ok(service.operar(new OperandoNumerico(primero), new OperandoNumerico(segundo)));
   }
 }
