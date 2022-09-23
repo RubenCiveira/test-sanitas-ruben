@@ -1,9 +1,11 @@
 package es.plexus.sanitas.test.service.math;
 
 import java.math.BigDecimal;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service("resta")
+@Qualifier("resta")
 public class OperadorResta implements Operador {
   @Override
   public BigDecimal operar(Operando... operadores) {
